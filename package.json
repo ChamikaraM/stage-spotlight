@@ -1,7 +1,7 @@
 {
   "name": "stage-spotlight",
   "version": "1.0.0",
-  "description": "",
+  "description": "A spotlight effect that follows the mouse pointer with light focus and darkened surroundings.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,9 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/ChamikaraM/stage-spotlight.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "spotlight",
+    "mouse",
+    "effect",
+    "canvas",
+    "visual",
+    "light",
+    "dark",
+    "focus",
+    "animation"
+  ],
+  "author": "Chamikara M.",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ChamikaraM/stage-spotlight/issues"
   },
