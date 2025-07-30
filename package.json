@@ -1,6 +1,6 @@
 {
   "name": "stage-spotlight",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A spotlight effect that follows the mouse pointer with light focus and darkened surroundings.",
   "main": "index.js",
   "scripts": {
