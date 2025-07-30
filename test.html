@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stage Spotlight Test</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    p {
+      max-width: 400px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Stage Spotlight Effect Demo</h1>
+  <p>Move your mouse around to see the spotlight effect illuminating from screen edges.</p>
+
+  <script type="module">
+    import { initStageSpotlight, destroyStageSpotlight } from './src/index.js';
+
+    initStageSpotlight({
+      spotlightRadius: 180,
+      darknessOpacity: 0.75,
+      blur: 120,
+      lightColor: '#fff',
+      followSpeed: 0.15,
+      zIndex: 9999
+    });
+
+    // Optional: clean up spotlight when leaving page
+    window.addEventListener('beforeunload', () => {
+      destroyStageSpotlight();
+    });
+  </script>
+</body>
+</html>
